@@ -1,0 +1,227 @@
+@import url(http://fonts.googleapis.com/css?family=Skranji);
+
+@-webkit-keyframes swinging 
+{
+    0% {
+        -webkit-transform: rotate(-2deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-2deg);
+    }
+}
+
+@keyframes swinging
+{
+    0% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+@-moz-keyframes swinging /* Firefox */
+{
+    0% {
+        -moz-transform: rotate(-2deg);
+    }
+
+    50% {
+        -moz-transform: rotate(2deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-2deg);
+    }
+}
+
+html {
+	font-family: 'Skranji', cursive;
+}
+
+/* Canvas CSS */
+#desktopContainer {
+	display: none;
+	background-image: url('../img/grasstile.jpg');
+	background-repeat: repeat;
+	position: fixed;
+	left:0; top:0;
+	width:100%;
+	height: 100%;
+	z-index: 9;
+}
+
+#canvasContainer {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#content {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: swinging 3s infinite ease-in-out;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -moz-animation: swinging 3s infinite ease-in-out;
+}
+
+#canvasId {
+	font-family: 'Skranji', cursive;
+	font-size: 2.5em;
+	color: #fff;
+	margin-top: 20px;
+	text-shadow: 2px 2px 0px black;
+}
+#connectionAwait {
+	font-family: 'Skranji', cursive;
+	font-size: 1.5em;
+	color: #fff;
+	margin: 20px 0px 30px 0px;
+	text-shadow: 2px 2px 0px black;
+}
+
+#footer {
+    line-height: 20px;
+    margin: 10px;
+    color: #fff;
+    font-family: 'Skranji', cursive;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 0px black;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+#footer > ul > li {
+    display: inline;
+    line-height: 20px;
+    margin: 10px;
+    color: #fff;
+    font-family: 'Skranji', cursive;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 0px black;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+.about {
+	margin-top: 30px;
+	color: #fff;
+    font-family: 'Skranji', cursive;
+    font-size: 0.8 em;
+    text-shadow: 1px 1px 0px black;
+}
+
+#bg {
+	position: fixed;
+	top:0;left:0;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+}
+
+/* Mobile CSS */
+.mozilla {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0.8em;
+}
+
+.noCode {
+	font-family: 'Skranji', cursive;
+	padding: 2px;
+}
+
+#inputId {
+	font-family: 'Skranji', cursive;
+	margin-bottom: 20px;
+}
+
+#roleSelector {
+	display: none;
+}
+
+#roleRun {
+	position: fixed;
+	top:30%; left:10%;
+	width: 100px; height: 100px;
+	background-image: url("../img/runBtn.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.toggled {
+	border-radius: 15px;
+	border: 10px solid black;
+	width: 90px; height: 90px;
+	margin-top: -10px;
+}
+
+#roleJump {
+	position: fixed;
+	top:30%; right:10%;
+	width: 100px; height: 100px;
+	background-image: url("../img/jumpBtn.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#debug {
+	position: fixed;
+	bottom: 0; left:0;
+	z-index: 9999;
+	font-size: 0.5em;
+}
+
+#mobileContainer {
+	display: none;
+	padding: 20px;
+	text-align: center;
+	-webkit-animation: swinging 2s infinite ease-in-out;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -moz-animation: swinging 2s infinite ease-in-out;
+}
+
+#shakeCounter {
+	display: none;
+	font-size: 3em;
+}
+
+#jumpOrDuck {
+	display: none;
+	font-size: 3 em;
+}
+
+#howToRun {
+	font-family: 'Skranji', cursive;
+	padding: 15px;
+	display: none;
+	text-align: center;
+	background-color: red;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+#howToJump {
+	font-family: 'Skranji', cursive;
+	padding: 15px;
+	display: none;
+	text-align: center;
+	background-color: green;
+	font-size: 1.5em;
+	color: #fff;
+}
